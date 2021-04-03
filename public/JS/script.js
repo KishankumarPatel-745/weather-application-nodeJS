@@ -15,7 +15,7 @@ p01.innerText ="Please provide location to fetch weather"
 p02.textContent="Thank you"
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
-    fetch(`/weather?address=${in01.value}}`).then(response=>{
+    fetch(`/weather?address=${in01.value}`).then(response=>{
         response.json().then((data)=>{
             if(data.error){
                 // console.log('Hi this is a error: ',data.error)
