@@ -26,7 +26,7 @@ form.addEventListener('submit',(e)=>{
             else{
                 // console.log(data)
                 p01.innerText="Weather Location:- "+ in01.value
-                p02.innerHTML=`Location:- ${data.location} <br> Temperature:- ${data.temperature} <br> Wind Speed:- ${data.wind_speed} <br> Feelslike:- ${data.feelslike} <br> visibility:- ${data.visibility} `
+                p02.innerHTML=`Location:- ${data.location} <br> Temperature:- ${data.temperature} <br> Wind Speed:- ${data.wind_speed} <br> Feelslike:- ${data.feelslike} <br> Visibility:- ${data.visibility} <br> Humidity:- ${data.humidity}`
                 console.log('This is it')
             }
         })

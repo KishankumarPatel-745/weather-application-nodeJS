@@ -14,7 +14,8 @@ const forecast=(latitude,longitute,ForecastCallback)=>{
                 temperature: body.current.temperature,
                 wind_speed: body.current.wind_speed,
                 feelslike: body.current.feelslike,
-                visibility: body.current.visibility
+                visibility: body.current.visibility,
+                humidity: body.current.humidity
             })
         }
     })
