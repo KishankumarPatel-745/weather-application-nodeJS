@@ -1,0 +1,14 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+ div{
+     color:yellow;
+     background-color: black;
+ }
+ img{
+    width: 500px;
+    height: 800px;
+}a{
+    color:red
+}
