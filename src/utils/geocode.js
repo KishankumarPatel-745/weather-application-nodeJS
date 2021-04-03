@@ -9,9 +9,9 @@ const geocode=(address,weatherCall)=>{
             weatherCall('Invalid Token for given Geo API call or no location found')
         }else {
             let data=body.features[0].center
-            console.log("this is a both lat/long data",data)
-            console.log("latitude of delhi ",data[1])
-            console.log("longitute of delhi ",data[0])
+            // console.log("this is a both lat/long data",data)
+            // console.log("latitude of delhi ",data[1])
+            // console.log("longitute of delhi ",data[0])
             let weatherUrl=`http://api.weatherstack.com/current?access_key=6753a46056f5f042341fc6340376f861&query=${data[1]},${data[0]}`
             weatherCall(error,{latitude:data[1],
             longitute:data[0]});

@@ -3,9 +3,10 @@ const express=require('express')
 const hbs=require('hbs')
 const geocode=require('./utils/geocode')
 const forecast=require('./utils/forecast')
-const { connected } = require('process')
 const app=express()
 
+
+const port=process.env.PORT||3000
 //setting static files folder/path
 app.use(express.static(path.join(__dirname,"../public")))
 
@@ -100,7 +101,7 @@ app.get('*',(req,res)=>{
         follower:'Vidhata'
     })
 })
-app.listen(3000,()=>console.log("server is running on port 3000"))
+app.listen(port,()=>console.log("server is running on port ",port))
 
 //important variable
 // console.log(__dirname);
